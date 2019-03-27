@@ -1,0 +1,14 @@
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\bin\Debug\SistemaBasico.exe.config
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\bin\Debug\SistemaBasico.exe
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\bin\Debug\SistemaBasico.pdb
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\obj\Debug\SistemaBasico.csprojAssemblyReference.cache
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\obj\Debug\SistemaBasico.frmLogin.resources
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\obj\Debug\SistemaBasico.frmMenu.resources
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\obj\Debug\SistemaBasico.Properties.Resources.resources
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\obj\Debug\SistemaBasico.csproj.GenerateResource.cache
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\obj\Debug\SistemaBasico.csproj.CoreCompileInputs.cache
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\obj\Debug\SistemaBasico.exe
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\obj\Debug\SistemaBasico.pdb
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\obj\Debug\SistemaBasico.frmCClientes.resources
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\obj\Debug\SistemaBasico.frmCfuncionarios.resources
+C:\Users\Windows\Desktop\Arquivos\Guithub\Repositorios\2019\Sistema\SistemaBasico\obj\Debug\SistemaBasico.frmCProdutos.resources

@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCClientes.Designer.cs">
+      <DependentUpon>frmCClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCfuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCfuncionarios.Designer.cs">
+      <DependentUpon>frmCfuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCProdutos.Designer.cs">
+      <DependentUpon>frmCProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +78,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCClientes.resx">
+      <DependentUpon>frmCClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCfuncionarios.resx">
+      <DependentUpon>frmCfuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCProdutos.resx">
+      <DependentUpon>frmCProdutos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +121,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconfinder_Login_in_85205.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
