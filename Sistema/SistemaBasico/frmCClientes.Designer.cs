@@ -35,23 +35,23 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTel = new System.Windows.Forms.Label();
-            this.maskTel = new System.Windows.Forms.MaskedTextBox();
-            this.maskCel = new System.Windows.Forms.MaskedTextBox();
-            this.lblCel = new System.Windows.Forms.Label();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.cbDiabetico = new System.Windows.Forms.CheckBox();
+            this.cbIntolerante = new System.Windows.Forms.CheckBox();
+            this.cbVegano = new System.Windows.Forms.CheckBox();
+            this.cbVegetariano = new System.Windows.Forms.CheckBox();
+            this.lblPreferencias = new System.Windows.Forms.Label();
+            this.gbEstadoCivil = new System.Windows.Forms.GroupBox();
+            this.rbCasado = new System.Windows.Forms.RadioButton();
+            this.rbSolteiro = new System.Windows.Forms.RadioButton();
+            this.cboxEstado = new System.Windows.Forms.ComboBox();
+            this.cboxCidade = new System.Windows.Forms.ComboBox();
             this.lblEstado = new System.Windows.Forms.Label();
             this.lblCidade = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.gbEstadoCivil = new System.Windows.Forms.GroupBox();
-            this.rbSolteiro = new System.Windows.Forms.RadioButton();
-            this.rbCasado = new System.Windows.Forms.RadioButton();
-            this.lblPreferencias = new System.Windows.Forms.Label();
-            this.cbVegetariano = new System.Windows.Forms.CheckBox();
-            this.cbVegano = new System.Windows.Forms.CheckBox();
-            this.cvIntolerante = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.maskCel = new System.Windows.Forms.MaskedTextBox();
+            this.lblCel = new System.Windows.Forms.Label();
+            this.maskTel = new System.Windows.Forms.MaskedTextBox();
+            this.lblTel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.gbEstadoCivil.SuspendLayout();
             this.SuspendLayout();
@@ -102,14 +102,14 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnCadastrar);
-            this.panel1.Controls.Add(this.checkBox4);
-            this.panel1.Controls.Add(this.cvIntolerante);
+            this.panel1.Controls.Add(this.cbDiabetico);
+            this.panel1.Controls.Add(this.cbIntolerante);
             this.panel1.Controls.Add(this.cbVegano);
             this.panel1.Controls.Add(this.cbVegetariano);
             this.panel1.Controls.Add(this.lblPreferencias);
             this.panel1.Controls.Add(this.gbEstadoCivil);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cboxEstado);
+            this.panel1.Controls.Add(this.cboxCidade);
             this.panel1.Controls.Add(this.lblEstado);
             this.panel1.Controls.Add(this.lblCidade);
             this.panel1.Controls.Add(this.maskCel);
@@ -125,39 +125,135 @@
             this.panel1.Size = new System.Drawing.Size(487, 298);
             this.panel1.TabIndex = 5;
             // 
-            // lblTel
+            // btnCadastrar
             // 
-            this.lblTel.AutoSize = true;
-            this.lblTel.Location = new System.Drawing.Point(5, 73);
-            this.lblTel.Name = "lblTel";
-            this.lblTel.Size = new System.Drawing.Size(52, 13);
-            this.lblTel.TabIndex = 4;
-            this.lblTel.Text = "Telefone:";
+            this.btnCadastrar.Location = new System.Drawing.Point(254, 233);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(220, 41);
+            this.btnCadastrar.TabIndex = 18;
+            this.btnCadastrar.Text = "CADASTRAR";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // maskTel
+            // cbDiabetico
             // 
-            this.maskTel.Location = new System.Drawing.Point(8, 93);
-            this.maskTel.Mask = "(99) 0 0000-0000";
-            this.maskTel.Name = "maskTel";
-            this.maskTel.Size = new System.Drawing.Size(99, 20);
-            this.maskTel.TabIndex = 5;
+            this.cbDiabetico.AutoSize = true;
+            this.cbDiabetico.Location = new System.Drawing.Point(254, 180);
+            this.cbDiabetico.Name = "cbDiabetico";
+            this.cbDiabetico.Size = new System.Drawing.Size(71, 17);
+            this.cbDiabetico.TabIndex = 17;
+            this.cbDiabetico.Text = "Diabético";
+            this.cbDiabetico.UseVisualStyleBackColor = true;
             // 
-            // maskCel
+            // cbIntolerante
             // 
-            this.maskCel.Location = new System.Drawing.Point(128, 93);
-            this.maskCel.Mask = "(99) 0 0000-0000";
-            this.maskCel.Name = "maskCel";
-            this.maskCel.Size = new System.Drawing.Size(101, 20);
-            this.maskCel.TabIndex = 7;
+            this.cbIntolerante.AutoSize = true;
+            this.cbIntolerante.Location = new System.Drawing.Point(254, 157);
+            this.cbIntolerante.Name = "cbIntolerante";
+            this.cbIntolerante.Size = new System.Drawing.Size(126, 17);
+            this.cbIntolerante.TabIndex = 16;
+            this.cbIntolerante.Text = "Intolerante á Lactose";
+            this.cbIntolerante.UseVisualStyleBackColor = true;
             // 
-            // lblCel
+            // cbVegano
             // 
-            this.lblCel.AutoSize = true;
-            this.lblCel.Location = new System.Drawing.Point(125, 73);
-            this.lblCel.Name = "lblCel";
-            this.lblCel.Size = new System.Drawing.Size(42, 13);
-            this.lblCel.TabIndex = 6;
-            this.lblCel.Text = "Celular:";
+            this.cbVegano.AutoSize = true;
+            this.cbVegano.Location = new System.Drawing.Point(254, 134);
+            this.cbVegano.Name = "cbVegano";
+            this.cbVegano.Size = new System.Drawing.Size(63, 17);
+            this.cbVegano.TabIndex = 15;
+            this.cbVegano.Text = "Vegano";
+            this.cbVegano.UseVisualStyleBackColor = true;
+            // 
+            // cbVegetariano
+            // 
+            this.cbVegetariano.AutoSize = true;
+            this.cbVegetariano.Location = new System.Drawing.Point(254, 111);
+            this.cbVegetariano.Name = "cbVegetariano";
+            this.cbVegetariano.Size = new System.Drawing.Size(83, 17);
+            this.cbVegetariano.TabIndex = 14;
+            this.cbVegetariano.Text = "Vegetariano";
+            this.cbVegetariano.UseVisualStyleBackColor = true;
+            // 
+            // lblPreferencias
+            // 
+            this.lblPreferencias.AutoSize = true;
+            this.lblPreferencias.Location = new System.Drawing.Point(251, 80);
+            this.lblPreferencias.Name = "lblPreferencias";
+            this.lblPreferencias.Size = new System.Drawing.Size(69, 13);
+            this.lblPreferencias.TabIndex = 13;
+            this.lblPreferencias.Text = "Preferências:";
+            // 
+            // gbEstadoCivil
+            // 
+            this.gbEstadoCivil.Controls.Add(this.rbCasado);
+            this.gbEstadoCivil.Controls.Add(this.rbSolteiro);
+            this.gbEstadoCivil.Location = new System.Drawing.Point(8, 201);
+            this.gbEstadoCivil.Name = "gbEstadoCivil";
+            this.gbEstadoCivil.Size = new System.Drawing.Size(220, 76);
+            this.gbEstadoCivil.TabIndex = 12;
+            this.gbEstadoCivil.TabStop = false;
+            this.gbEstadoCivil.Text = "Estado Civil:";
+            this.gbEstadoCivil.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // rbCasado
+            // 
+            this.rbCasado.AutoSize = true;
+            this.rbCasado.Location = new System.Drawing.Point(128, 32);
+            this.rbCasado.Name = "rbCasado";
+            this.rbCasado.Size = new System.Drawing.Size(61, 17);
+            this.rbCasado.TabIndex = 1;
+            this.rbCasado.TabStop = true;
+            this.rbCasado.Text = "Casado";
+            this.rbCasado.UseVisualStyleBackColor = true;
+            // 
+            // rbSolteiro
+            // 
+            this.rbSolteiro.AutoSize = true;
+            this.rbSolteiro.Location = new System.Drawing.Point(23, 32);
+            this.rbSolteiro.Name = "rbSolteiro";
+            this.rbSolteiro.Size = new System.Drawing.Size(60, 17);
+            this.rbSolteiro.TabIndex = 0;
+            this.rbSolteiro.TabStop = true;
+            this.rbSolteiro.Text = "Solteiro";
+            this.rbSolteiro.UseVisualStyleBackColor = true;
+            this.rbSolteiro.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // cboxEstado
+            // 
+            this.cboxEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxEstado.FormattingEnabled = true;
+            this.cboxEstado.Items.AddRange(new object[] {
+            "SP",
+            "RJ",
+            "SC"});
+            this.cboxEstado.Location = new System.Drawing.Point(144, 153);
+            this.cboxEstado.Name = "cboxEstado";
+            this.cboxEstado.Size = new System.Drawing.Size(85, 21);
+            this.cboxEstado.TabIndex = 11;
+            // 
+            // cboxCidade
+            // 
+            this.cboxCidade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxCidade.FormattingEnabled = true;
+            this.cboxCidade.Items.AddRange(new object[] {
+            "Americana ",
+            "Santa Barbara do Oeste",
+            "Nova Odessa",
+            "Sumaré ",
+            "Limeira ",
+            "Piracicaba",
+            "São Paulo",
+            "Rio de Janeiro",
+            "Parati",
+            "Sapucaia",
+            "São Bernardino",
+            "Rio fortuna",
+            "Saltinho"});
+            this.cboxCidade.Location = new System.Drawing.Point(8, 153);
+            this.cboxCidade.Name = "cboxCidade";
+            this.cboxCidade.Size = new System.Drawing.Size(130, 21);
+            this.cboxCidade.TabIndex = 10;
             // 
             // lblEstado
             // 
@@ -177,114 +273,39 @@
             this.lblCidade.TabIndex = 8;
             this.lblCidade.Text = "Cidade:";
             // 
-            // comboBox1
+            // maskCel
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(8, 153);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(130, 21);
-            this.comboBox1.TabIndex = 10;
+            this.maskCel.Location = new System.Drawing.Point(128, 93);
+            this.maskCel.Mask = "(99) 0 0000-0000";
+            this.maskCel.Name = "maskCel";
+            this.maskCel.Size = new System.Drawing.Size(101, 20);
+            this.maskCel.TabIndex = 7;
             // 
-            // comboBox2
+            // lblCel
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(144, 153);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(85, 21);
-            this.comboBox2.TabIndex = 11;
+            this.lblCel.AutoSize = true;
+            this.lblCel.Location = new System.Drawing.Point(125, 73);
+            this.lblCel.Name = "lblCel";
+            this.lblCel.Size = new System.Drawing.Size(42, 13);
+            this.lblCel.TabIndex = 6;
+            this.lblCel.Text = "Celular:";
             // 
-            // gbEstadoCivil
+            // maskTel
             // 
-            this.gbEstadoCivil.Controls.Add(this.rbCasado);
-            this.gbEstadoCivil.Controls.Add(this.rbSolteiro);
-            this.gbEstadoCivil.Location = new System.Drawing.Point(8, 201);
-            this.gbEstadoCivil.Name = "gbEstadoCivil";
-            this.gbEstadoCivil.Size = new System.Drawing.Size(220, 76);
-            this.gbEstadoCivil.TabIndex = 12;
-            this.gbEstadoCivil.TabStop = false;
-            this.gbEstadoCivil.Text = "Estado Civil:";
-            this.gbEstadoCivil.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.maskTel.Location = new System.Drawing.Point(8, 93);
+            this.maskTel.Mask = "(99) 0000-0000";
+            this.maskTel.Name = "maskTel";
+            this.maskTel.Size = new System.Drawing.Size(99, 20);
+            this.maskTel.TabIndex = 5;
             // 
-            // rbSolteiro
+            // lblTel
             // 
-            this.rbSolteiro.AutoSize = true;
-            this.rbSolteiro.Location = new System.Drawing.Point(23, 32);
-            this.rbSolteiro.Name = "rbSolteiro";
-            this.rbSolteiro.Size = new System.Drawing.Size(60, 17);
-            this.rbSolteiro.TabIndex = 0;
-            this.rbSolteiro.TabStop = true;
-            this.rbSolteiro.Text = "Solteiro";
-            this.rbSolteiro.UseVisualStyleBackColor = true;
-            this.rbSolteiro.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // rbCasado
-            // 
-            this.rbCasado.AutoSize = true;
-            this.rbCasado.Location = new System.Drawing.Point(128, 32);
-            this.rbCasado.Name = "rbCasado";
-            this.rbCasado.Size = new System.Drawing.Size(61, 17);
-            this.rbCasado.TabIndex = 1;
-            this.rbCasado.TabStop = true;
-            this.rbCasado.Text = "Casado";
-            this.rbCasado.UseVisualStyleBackColor = true;
-            // 
-            // lblPreferencias
-            // 
-            this.lblPreferencias.AutoSize = true;
-            this.lblPreferencias.Location = new System.Drawing.Point(251, 80);
-            this.lblPreferencias.Name = "lblPreferencias";
-            this.lblPreferencias.Size = new System.Drawing.Size(69, 13);
-            this.lblPreferencias.TabIndex = 13;
-            this.lblPreferencias.Text = "Preferências:";
-            // 
-            // cbVegetariano
-            // 
-            this.cbVegetariano.AutoSize = true;
-            this.cbVegetariano.Location = new System.Drawing.Point(254, 111);
-            this.cbVegetariano.Name = "cbVegetariano";
-            this.cbVegetariano.Size = new System.Drawing.Size(83, 17);
-            this.cbVegetariano.TabIndex = 14;
-            this.cbVegetariano.Text = "Vegetariano";
-            this.cbVegetariano.UseVisualStyleBackColor = true;
-            // 
-            // cbVegano
-            // 
-            this.cbVegano.AutoSize = true;
-            this.cbVegano.Location = new System.Drawing.Point(254, 134);
-            this.cbVegano.Name = "cbVegano";
-            this.cbVegano.Size = new System.Drawing.Size(63, 17);
-            this.cbVegano.TabIndex = 15;
-            this.cbVegano.Text = "Vegano";
-            this.cbVegano.UseVisualStyleBackColor = true;
-            // 
-            // cvIntolerante
-            // 
-            this.cvIntolerante.AutoSize = true;
-            this.cvIntolerante.Location = new System.Drawing.Point(254, 157);
-            this.cvIntolerante.Name = "cvIntolerante";
-            this.cvIntolerante.Size = new System.Drawing.Size(126, 17);
-            this.cvIntolerante.TabIndex = 16;
-            this.cvIntolerante.Text = "Intolerante á Lactose";
-            this.cvIntolerante.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(254, 180);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(71, 17);
-            this.checkBox4.TabIndex = 17;
-            this.checkBox4.Text = "Diabético";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.Location = new System.Drawing.Point(254, 233);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(220, 41);
-            this.btnCadastrar.TabIndex = 18;
-            this.btnCadastrar.Text = "CADASTRAR";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.lblTel.AutoSize = true;
+            this.lblTel.Location = new System.Drawing.Point(5, 73);
+            this.lblTel.Name = "lblTel";
+            this.lblTel.Size = new System.Drawing.Size(52, 13);
+            this.lblTel.TabIndex = 4;
+            this.lblTel.Text = "Telefone:";
             // 
             // frmCClientes
             // 
@@ -298,6 +319,7 @@
             this.Name = "frmCClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Clientes";
+            this.Load += new System.EventHandler(this.frmCClientes_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.gbEstadoCivil.ResumeLayout(false);
@@ -319,16 +341,16 @@
         private System.Windows.Forms.Label lblTel;
         private System.Windows.Forms.MaskedTextBox maskCel;
         private System.Windows.Forms.Label lblCel;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboxEstado;
+        private System.Windows.Forms.ComboBox cboxCidade;
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.Label lblCidade;
         private System.Windows.Forms.GroupBox gbEstadoCivil;
         private System.Windows.Forms.RadioButton rbCasado;
         private System.Windows.Forms.RadioButton rbSolteiro;
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox cvIntolerante;
+        private System.Windows.Forms.CheckBox cbDiabetico;
+        private System.Windows.Forms.CheckBox cbIntolerante;
         private System.Windows.Forms.CheckBox cbVegano;
         private System.Windows.Forms.CheckBox cbVegetariano;
         private System.Windows.Forms.Label lblPreferencias;
