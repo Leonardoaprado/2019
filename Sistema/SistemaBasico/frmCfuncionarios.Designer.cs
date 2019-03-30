@@ -31,14 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCfuncionarios));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.maskCel = new System.Windows.Forms.MaskedTextBox();
-            this.lblCel = new System.Windows.Forms.Label();
-            this.maskTel = new System.Windows.Forms.MaskedTextBox();
-            this.lblTel = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.lblNome = new System.Windows.Forms.Label();
+            this.txtSalario = new System.Windows.Forms.TextBox();
+            this.lblSalario = new System.Windows.Forms.Label();
+            this.gboxEscolaridade = new System.Windows.Forms.GroupBox();
+            this.rbFundamental = new System.Windows.Forms.RadioButton();
+            this.rbMedio = new System.Windows.Forms.RadioButton();
+            this.rbSuperior = new System.Windows.Forms.RadioButton();
             this.gbEstadoCivil = new System.Windows.Forms.GroupBox();
             this.rbCasado = new System.Windows.Forms.RadioButton();
             this.rbSolteiro = new System.Windows.Forms.RadioButton();
@@ -47,22 +45,24 @@
             this.lblEstado = new System.Windows.Forms.Label();
             this.lblCidade = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.gboxEscolaridade = new System.Windows.Forms.GroupBox();
-            this.rbSuperior = new System.Windows.Forms.RadioButton();
-            this.rbMedio = new System.Windows.Forms.RadioButton();
-            this.rbFundamental = new System.Windows.Forms.RadioButton();
-            this.lblSalario = new System.Windows.Forms.Label();
-            this.txtSalario = new System.Windows.Forms.TextBox();
+            this.maskCel = new System.Windows.Forms.MaskedTextBox();
+            this.lblCel = new System.Windows.Forms.Label();
+            this.maskTel = new System.Windows.Forms.MaskedTextBox();
+            this.lblTel = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.lblNome = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.gbEstadoCivil.SuspendLayout();
             this.gboxEscolaridade.SuspendLayout();
+            this.gbEstadoCivil.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(12, 27);
+            this.lblTitulo.Location = new System.Drawing.Point(8, 27);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(316, 24);
             this.lblTitulo.TabIndex = 5;
@@ -89,76 +89,71 @@
             this.panel1.Controls.Add(this.lblEmail);
             this.panel1.Controls.Add(this.txtNome);
             this.panel1.Controls.Add(this.lblNome);
-            this.panel1.Location = new System.Drawing.Point(15, 73);
+            this.panel1.Location = new System.Drawing.Point(12, 54);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(496, 278);
             this.panel1.TabIndex = 6;
             // 
-            // maskCel
+            // txtSalario
             // 
-            this.maskCel.Location = new System.Drawing.Point(132, 87);
-            this.maskCel.Mask = "(99) 0 0000-0000";
-            this.maskCel.Name = "maskCel";
-            this.maskCel.Size = new System.Drawing.Size(101, 20);
-            this.maskCel.TabIndex = 15;
+            this.txtSalario.Location = new System.Drawing.Point(372, 195);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(105, 20);
+            this.txtSalario.TabIndex = 27;
             // 
-            // lblCel
+            // lblSalario
             // 
-            this.lblCel.AutoSize = true;
-            this.lblCel.Location = new System.Drawing.Point(129, 67);
-            this.lblCel.Name = "lblCel";
-            this.lblCel.Size = new System.Drawing.Size(42, 13);
-            this.lblCel.TabIndex = 14;
-            this.lblCel.Text = "Celular:";
+            this.lblSalario.AutoSize = true;
+            this.lblSalario.Location = new System.Drawing.Point(265, 198);
+            this.lblSalario.Name = "lblSalario";
+            this.lblSalario.Size = new System.Drawing.Size(101, 13);
+            this.lblSalario.TabIndex = 26;
+            this.lblSalario.Text = "Salario:               R$";
             // 
-            // maskTel
+            // gboxEscolaridade
             // 
-            this.maskTel.Location = new System.Drawing.Point(12, 87);
-            this.maskTel.Mask = "(99) 0000-0000";
-            this.maskTel.Name = "maskTel";
-            this.maskTel.Size = new System.Drawing.Size(99, 20);
-            this.maskTel.TabIndex = 13;
+            this.gboxEscolaridade.Controls.Add(this.rbFundamental);
+            this.gboxEscolaridade.Controls.Add(this.rbMedio);
+            this.gboxEscolaridade.Controls.Add(this.rbSuperior);
+            this.gboxEscolaridade.Location = new System.Drawing.Point(261, 69);
+            this.gboxEscolaridade.Name = "gboxEscolaridade";
+            this.gboxEscolaridade.Size = new System.Drawing.Size(216, 102);
+            this.gboxEscolaridade.TabIndex = 25;
+            this.gboxEscolaridade.TabStop = false;
+            this.gboxEscolaridade.Text = "Escolaridade:";
             // 
-            // lblTel
+            // rbFundamental
             // 
-            this.lblTel.AutoSize = true;
-            this.lblTel.Location = new System.Drawing.Point(9, 67);
-            this.lblTel.Name = "lblTel";
-            this.lblTel.Size = new System.Drawing.Size(52, 13);
-            this.lblTel.TabIndex = 12;
-            this.lblTel.Text = "Telefone:";
+            this.rbFundamental.AutoSize = true;
+            this.rbFundamental.Location = new System.Drawing.Point(17, 75);
+            this.rbFundamental.Name = "rbFundamental";
+            this.rbFundamental.Size = new System.Drawing.Size(121, 17);
+            this.rbFundamental.TabIndex = 2;
+            this.rbFundamental.TabStop = true;
+            this.rbFundamental.Text = "Ensino Fundamental";
+            this.rbFundamental.UseVisualStyleBackColor = true;
             // 
-            // txtEmail
+            // rbMedio
             // 
-            this.txtEmail.Location = new System.Drawing.Point(258, 34);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(220, 20);
-            this.txtEmail.TabIndex = 11;
+            this.rbMedio.AutoSize = true;
+            this.rbMedio.Location = new System.Drawing.Point(17, 52);
+            this.rbMedio.Name = "rbMedio";
+            this.rbMedio.Size = new System.Drawing.Size(89, 17);
+            this.rbMedio.TabIndex = 1;
+            this.rbMedio.TabStop = true;
+            this.rbMedio.Text = "Ensino Médio";
+            this.rbMedio.UseVisualStyleBackColor = true;
             // 
-            // lblEmail
+            // rbSuperior
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(255, 8);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(38, 13);
-            this.lblEmail.TabIndex = 10;
-            this.lblEmail.Text = "E-mail:";
-            // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(12, 34);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(221, 20);
-            this.txtNome.TabIndex = 9;
-            // 
-            // lblNome
-            // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(9, 8);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(38, 13);
-            this.lblNome.TabIndex = 8;
-            this.lblNome.Text = "Nome:";
+            this.rbSuperior.AutoSize = true;
+            this.rbSuperior.Location = new System.Drawing.Point(17, 29);
+            this.rbSuperior.Name = "rbSuperior";
+            this.rbSuperior.Size = new System.Drawing.Size(99, 17);
+            this.rbSuperior.TabIndex = 0;
+            this.rbSuperior.TabStop = true;
+            this.rbSuperior.Text = "Ensino Superior";
+            this.rbSuperior.UseVisualStyleBackColor = true;
             // 
             // gbEstadoCivil
             // 
@@ -257,72 +252,77 @@
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // gboxEscolaridade
+            // maskCel
             // 
-            this.gboxEscolaridade.Controls.Add(this.rbFundamental);
-            this.gboxEscolaridade.Controls.Add(this.rbMedio);
-            this.gboxEscolaridade.Controls.Add(this.rbSuperior);
-            this.gboxEscolaridade.Location = new System.Drawing.Point(261, 69);
-            this.gboxEscolaridade.Name = "gboxEscolaridade";
-            this.gboxEscolaridade.Size = new System.Drawing.Size(216, 102);
-            this.gboxEscolaridade.TabIndex = 25;
-            this.gboxEscolaridade.TabStop = false;
-            this.gboxEscolaridade.Text = "Escolaridade:";
+            this.maskCel.Location = new System.Drawing.Point(132, 87);
+            this.maskCel.Mask = "(99) 0 0000-0000";
+            this.maskCel.Name = "maskCel";
+            this.maskCel.Size = new System.Drawing.Size(101, 20);
+            this.maskCel.TabIndex = 15;
             // 
-            // rbSuperior
+            // lblCel
             // 
-            this.rbSuperior.AutoSize = true;
-            this.rbSuperior.Location = new System.Drawing.Point(17, 29);
-            this.rbSuperior.Name = "rbSuperior";
-            this.rbSuperior.Size = new System.Drawing.Size(99, 17);
-            this.rbSuperior.TabIndex = 0;
-            this.rbSuperior.TabStop = true;
-            this.rbSuperior.Text = "Ensino Superior";
-            this.rbSuperior.UseVisualStyleBackColor = true;
+            this.lblCel.AutoSize = true;
+            this.lblCel.Location = new System.Drawing.Point(129, 67);
+            this.lblCel.Name = "lblCel";
+            this.lblCel.Size = new System.Drawing.Size(42, 13);
+            this.lblCel.TabIndex = 14;
+            this.lblCel.Text = "Celular:";
             // 
-            // rbMedio
+            // maskTel
             // 
-            this.rbMedio.AutoSize = true;
-            this.rbMedio.Location = new System.Drawing.Point(17, 52);
-            this.rbMedio.Name = "rbMedio";
-            this.rbMedio.Size = new System.Drawing.Size(89, 17);
-            this.rbMedio.TabIndex = 1;
-            this.rbMedio.TabStop = true;
-            this.rbMedio.Text = "Ensino Médio";
-            this.rbMedio.UseVisualStyleBackColor = true;
+            this.maskTel.Location = new System.Drawing.Point(12, 87);
+            this.maskTel.Mask = "(99) 0000-0000";
+            this.maskTel.Name = "maskTel";
+            this.maskTel.Size = new System.Drawing.Size(99, 20);
+            this.maskTel.TabIndex = 13;
             // 
-            // rbFundamental
+            // lblTel
             // 
-            this.rbFundamental.AutoSize = true;
-            this.rbFundamental.Location = new System.Drawing.Point(17, 75);
-            this.rbFundamental.Name = "rbFundamental";
-            this.rbFundamental.Size = new System.Drawing.Size(121, 17);
-            this.rbFundamental.TabIndex = 2;
-            this.rbFundamental.TabStop = true;
-            this.rbFundamental.Text = "Ensino Fundamental";
-            this.rbFundamental.UseVisualStyleBackColor = true;
+            this.lblTel.AutoSize = true;
+            this.lblTel.Location = new System.Drawing.Point(9, 67);
+            this.lblTel.Name = "lblTel";
+            this.lblTel.Size = new System.Drawing.Size(52, 13);
+            this.lblTel.TabIndex = 12;
+            this.lblTel.Text = "Telefone:";
             // 
-            // lblSalario
+            // txtEmail
             // 
-            this.lblSalario.AutoSize = true;
-            this.lblSalario.Location = new System.Drawing.Point(265, 198);
-            this.lblSalario.Name = "lblSalario";
-            this.lblSalario.Size = new System.Drawing.Size(101, 13);
-            this.lblSalario.TabIndex = 26;
-            this.lblSalario.Text = "Salario:               R$";
+            this.txtEmail.Location = new System.Drawing.Point(258, 34);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(220, 20);
+            this.txtEmail.TabIndex = 11;
             // 
-            // txtSalario
+            // lblEmail
             // 
-            this.txtSalario.Location = new System.Drawing.Point(372, 195);
-            this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(105, 20);
-            this.txtSalario.TabIndex = 27;
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(255, 8);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(38, 13);
+            this.lblEmail.TabIndex = 10;
+            this.lblEmail.Text = "E-mail:";
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(12, 34);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(221, 20);
+            this.txtNome.TabIndex = 9;
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(9, 8);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(38, 13);
+            this.lblNome.TabIndex = 8;
+            this.lblNome.Text = "Nome:";
             // 
             // frmCfuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(531, 366);
+            this.ClientSize = new System.Drawing.Size(521, 344);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -332,10 +332,10 @@
             this.Text = "Cadastro de Funcionários";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.gbEstadoCivil.ResumeLayout(false);
-            this.gbEstadoCivil.PerformLayout();
             this.gboxEscolaridade.ResumeLayout(false);
             this.gboxEscolaridade.PerformLayout();
+            this.gbEstadoCivil.ResumeLayout(false);
+            this.gbEstadoCivil.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
