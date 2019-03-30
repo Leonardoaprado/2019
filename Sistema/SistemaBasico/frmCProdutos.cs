@@ -16,5 +16,7 @@ namespace SistemaBasico
         {
             InitializeComponent();
         }
+
+        
     }
 }
