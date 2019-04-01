@@ -25,14 +25,26 @@ namespace SistemaBasico
 
         private double Multiplicacao(int num1, int num2)
         {
+           
             int total;
             total = num1 * num2;
             return total;
+            
+         
         }
 
         private void txtValorUnitario_TextChanged(object sender, EventArgs e)
         {
-            txtValorTotal.Text = (Multiplicacao(Convert.ToInt32(txtValorUnitario.Text), Convert.ToInt32(txtQuantidade.Text))).ToString("N");
+            if(txtQuantidade.Text == "" || txtValorUnitario.Text == "")
+            {
+
+                MessageBox.Show(" Os Campos Quantidade e Valor Unitario não pode estar Vazio", "ATENÇÃO!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                txtValorTotal.Text = (Multiplicacao(Convert.ToInt32(txtValorUnitario.Text), Convert.ToInt32(txtQuantidade.Text))).ToString("N");
+            }
+            
             
         }
 
